@@ -227,9 +227,9 @@ section {
         }
     }
 
-   .request-sent{
-       display: none;
-   }
+//    .request-sent{
+//     //    display: none;
+//    }
 
    .show-sent{
         display: flex;
@@ -276,6 +276,11 @@ section {
       
    }
    
+}
+
+  #visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 .hide-news{

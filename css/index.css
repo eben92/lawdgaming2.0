@@ -446,9 +446,6 @@ section .sci li a {
 .newsletter .display-news .close i:hover {
   transform: rotate(360deg);
 }
-.newsletter .request-sent {
-  display: none;
-}
 .newsletter .show-sent {
   display: flex;
   flex-direction: column;
@@ -482,6 +479,11 @@ section .sci li a {
   width: 100%;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
   border-radius: 10px;
+}
+
+#visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .hide-news {
