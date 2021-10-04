@@ -1,0 +1,816 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.body {
+  display: block;
+  background: #eeeeee;
+  font-family: "Lato", sans-serif;
+}
+
+.mobile-nav {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+.mobile-nav .header {
+  background: black;
+  box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.9);
+}
+.mobile-nav .header .header-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.mobile-nav .header .header-section .logo img {
+  width: 125px;
+}
+.mobile-nav .header .header-section .toggle-btn .toggle {
+  border: none;
+  color: white;
+  background: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.mobile-nav .header .header-section .toggle-btn .close-btn {
+  cursor: pointer;
+  transition: all 0.5s linear;
+  color: red;
+}
+.mobile-nav .header .header-section .toggle-btn .close-btn:hover {
+  transform: rotate(180deg);
+}
+.mobile-nav .header .header-section .toggle-btn .hide {
+  transition: all 0.5s linear;
+  display: none;
+}
+.mobile-nav aside .aside-links {
+  display: block;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  text-align: center;
+  background: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: all 0.9s linear;
+}
+.mobile-nav aside .aside-links ul li {
+  padding: 10px;
+  transition: all 0.5s linear;
+}
+.mobile-nav aside .aside-links ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+.mobile-nav aside .aside-links ul li :hover {
+  color: red;
+}
+.mobile-nav aside .hide {
+  display: none;
+  transition: all 0.5s linear;
+}
+
+main {
+  z-index: 0;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: static;
+  position: relative;
+}
+main .heading {
+  padding: 10px;
+}
+main .heading .heading-card {
+  height: auto;
+  width: 53vh;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+}
+main .heading .heading-card h1 {
+  margin-bottom: 10px;
+}
+main .heading .heading-card h1:not(.black) {
+  font-weight: 900;
+}
+main .heading .heading-card .black {
+  color: red;
+}
+main .heading .heading-card .inNavTrans {
+  color: black;
+}
+main .heading .heading-card .inNavTrans h4 {
+  border: 1px solid red;
+  padding: 5px;
+  text-align: center;
+  width: 30vh;
+  border-radius: 50px;
+}
+main .card {
+  background: #fff;
+  height: 100vh;
+  margin: 30px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 53vh;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+}
+main .card .pos-rel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 40px;
+  position: relative;
+}
+main .card .pos-rel .card-img {
+  border: none;
+}
+main .card .pos-rel .card-img img {
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  border-radius: 15px;
+}
+main .card .pos-rel .title {
+  margin: 10px;
+}
+main .card .pos-rel .title h2 {
+  font-weight: 600;
+}
+main .card .pos-rel .total-downlaods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .card .pos-rel .total-downlaods h2 {
+  color: red;
+  margin: 5px;
+}
+main .card .pos-rel .total-downlaods h3 {
+  text-transform: uppercase;
+  color: #5f5f5f;
+}
+main .card .pos-rel .download-links {
+  margin: 10px;
+  text-align: center;
+}
+main .card .pos-rel .download-links .apk-edit {
+  text-transform: capitalize;
+  background: #1d1d1d;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50vh;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+}
+main .card .pos-rel .download-links .apk-edit p {
+  margin: 5px;
+}
+main .card .pos-rel .download-links .obb,
+main .card .pos-rel .download-links .apk-edit,
+main .card .pos-rel .download-links .data {
+  margin: 15px;
+}
+main .card .pos-rel .social-media {
+  display: flex;
+  margin: 10px;
+  font-size: 3rem;
+}
+main .card .pos-rel .social-media a {
+  margin: 30px;
+}
+main .card .pos-rel .social-media .facebook {
+  color: blue;
+}
+main .card .pos-rel .social-media .youtube {
+  color: red;
+}
+main .card .pos-rel .social-media .youtube,
+main .card .pos-rel .social-media .facebook {
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+}
+main .install .card {
+  height: auto;
+}
+main .install .card .tutorial-section h1 {
+  text-transform: capitalize;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+main .install .card .tutorial-section .red {
+  color: red;
+}
+main .install .card .tutorial-section p {
+  margin: 30px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.header1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: black;
+}
+.header1 .logo {
+  position: relative;
+}
+.header1 .logo img {
+  width: 200px;
+}
+.header1 nav {
+  position: relative;
+}
+.header1 nav ul {
+  position: relative;
+  display: flex;
+}
+.header1 nav ul li a {
+  text-transform: uppercase;
+  color: #c4c3c3;
+  font-size: 15px;
+}
+.header1 nav ul li a:hover {
+  color: red;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 100px;
+}
+section .wave {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+section .contentBx {
+  position: relative;
+  max-width: 600px;
+  z-index: 1000;
+}
+section .contentBx h2 {
+  font-size: 60px;
+  color: #333;
+  text-transform: capitalize;
+}
+section .contentBx h2 .red {
+  color: red;
+}
+section .contentBx p {
+  font-size: 18px;
+}
+section .contentBx p .yt {
+  color: red;
+  font-weight: 700;
+}
+section .contentBx p .fb {
+  color: red;
+  font-weight: 700;
+}
+section .contentBx .countdown {
+  display: flex;
+  margin: 20px 0;
+}
+section .contentBx .countdown .time {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+  font-size: 48px;
+  min-width: 110px;
+  font-weight: 700;
+  padding: 10px 5px 15px;
+  border-radius: 4px;
+  background-color: #fdfdfd;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  transition: all 0.4s ease-in;
+}
+section .contentBx .countdown .time span {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+section .contentBx .countdown .time:hover {
+  transform: scale(90%);
+}
+section .contentBx .request {
+  position: relative;
+  margin-top: 10px;
+  display: inline-block;
+  background: black;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 15px 35px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+section .contentBx .request:hover {
+  background: red;
+}
+section .imgBx img {
+  max-width: 500px;
+  width: 100%;
+  margin-top: 100px;
+  z-index: 2;
+  position: relative;
+}
+section .sci {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .sci li a {
+  display: block;
+  margin-right: 20px;
+  transform: scale(0.8);
+}
+
+.newsletter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 60px;
+  background-color: white;
+  z-index: 100000;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.95);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.newsletter .display-news h2 {
+  font-size: 48px;
+  text-transform: capitalize;
+}
+.newsletter .display-news h2 .red {
+  color: red;
+}
+.newsletter .display-news p {
+  font-size: 20px;
+  color: #333;
+}
+.newsletter .display-news .inputBox {
+  margin-top: 20px;
+}
+.newsletter .display-news .inputBox input {
+  padding: 10px;
+  outline: none;
+  width: 300px;
+  font-size: 18px;
+  border: 1px solid #999;
+}
+.newsletter .display-news .inputBox input[type=submit] {
+  padding: 10px;
+  outline: none;
+  width: 140px;
+  color: #fff;
+  background-color: red;
+  border: 1px solid red;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.newsletter .display-news .inputBox input[type=submit]:hover {
+  background: black;
+  border-color: black;
+}
+.newsletter .display-news .close i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.3rem;
+  color: red;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.newsletter .display-news .close i:hover {
+  transform: rotate(360deg);
+}
+.newsletter .request-sent {
+  display: none;
+}
+.newsletter .show-sent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  transition: all 0.5s linear;
+}
+.newsletter .show-sent .sent {
+  background: green;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.newsletter .show-sent p {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.newsletter .show-sent a {
+  color: white;
+  font-size: 20px;
+  background: red;
+  margin: 10px 0;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  border-radius: 10px;
+}
+
+.hide-news {
+  display: none;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .header1 {
+    background: black;
+  }
+  .header1 nav ul li a {
+    text-transform: uppercase;
+    color: #c4c3c3;
+  }
+
+  section {
+    flex-direction: column;
+    padding-top: 150px;
+    height: auto;
+  }
+  section .contentBx {
+    max-width: 100%;
+  }
+  section .imgBx img {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .header1 {
+    padding: 20px 50px;
+    background: black;
+  }
+  .header1 .logo img {
+    width: 150px;
+  }
+  .header1 nav ul li a {
+    text-transform: uppercase;
+    color: #c4c3c3;
+  }
+
+  section {
+    flex-direction: column;
+    padding: 120px 50px 100px;
+    height: auto;
+  }
+  section .contentBx h2 {
+    font-size: 40px;
+  }
+  section .contentBx p {
+    font-size: 16px;
+  }
+  section .contentBx .countdown .time {
+    font-size: 30px;
+    min-width: 70px;
+    margin-right: 5px;
+  }
+  section .contentBx .countdown .time span {
+    font-size: 14px;
+  }
+  section .contentBx .request {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: inline-block;
+    background: #fff;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  }
+  section .sci {
+    left: 50px;
+  }
+  section .sci a {
+    background: white;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: cover;
+  }
+  section .sci a img {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    align-items: center;
+  }
+  section .imgBx {
+    margin-bottom: 30px;
+  }
+
+  .newsletter {
+    width: 90%;
+    padding: 30px;
+  }
+  .newsletter .inputBox input {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .body {
+    display: block;
+    background: #eeeeee;
+    font-family: "Lato", sans-serif;
+  }
+
+  .mobile-nav {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+  .mobile-nav .header {
+    background: black;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.9);
+  }
+  .mobile-nav .header .header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .mobile-nav .header .header-section .logo img {
+    width: 125px;
+  }
+  .mobile-nav .header .header-section .toggle-btn .toggle {
+    border: none;
+    color: white;
+    background: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.5s linear;
+  }
+  .mobile-nav .header .header-section .toggle-btn .close-btn {
+    cursor: pointer;
+    transition: all 0.5s linear;
+    color: red;
+  }
+  .mobile-nav .header .header-section .toggle-btn .close-btn:hover {
+    transform: rotate(180deg);
+  }
+  .mobile-nav .header .header-section .toggle-btn .hide {
+    transition: all 0.5s linear;
+    display: none;
+  }
+  .mobile-nav aside .aside-links {
+    display: block;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: all 0.9s linear;
+  }
+  .mobile-nav aside .aside-links ul li {
+    padding: 10px;
+    transition: all 0.5s linear;
+  }
+  .mobile-nav aside .aside-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .mobile-nav aside .aside-links ul li :hover {
+    color: red;
+  }
+  .mobile-nav aside .hide {
+    display: none;
+    transition: all 0.5s linear;
+  }
+
+  main {
+    z-index: 0;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    position: relative;
+  }
+  main .heading {
+    padding: 10px;
+  }
+  main .heading .heading-card {
+    height: auto;
+    width: 53vh;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  }
+  main .heading .heading-card h1 {
+    margin-bottom: 10px;
+  }
+  main .heading .heading-card h1:not(.black) {
+    font-weight: 900;
+  }
+  main .heading .heading-card .black {
+    color: red;
+  }
+  main .heading .heading-card .inNavTrans {
+    color: black;
+  }
+  main .heading .heading-card .inNavTrans h4 {
+    border: 1px solid red;
+    padding: 5px;
+    text-align: center;
+    width: 30vh;
+    border-radius: 50px;
+  }
+  main .card {
+    background: #fff;
+    height: 100vh;
+    margin: 30px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 53vh;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  }
+  main .card .pos-rel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 40px;
+    position: relative;
+  }
+  main .card .pos-rel .card-img {
+    border: none;
+  }
+  main .card .pos-rel .card-img img {
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 15px;
+  }
+  main .card .pos-rel .title {
+    margin: 10px;
+  }
+  main .card .pos-rel .title h2 {
+    font-weight: 600;
+  }
+  main .card .pos-rel .total-downlaods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .card .pos-rel .total-downlaods h2 {
+    color: red;
+    margin: 5px;
+  }
+  main .card .pos-rel .total-downlaods h3 {
+    text-transform: uppercase;
+    color: #5f5f5f;
+  }
+  main .card .pos-rel .download-links {
+    margin: 10px;
+    text-align: center;
+  }
+  main .card .pos-rel .download-links .apk-edit {
+    text-transform: capitalize;
+    background: #1d1d1d;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50vh;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  }
+  main .card .pos-rel .download-links .apk-edit p {
+    margin: 5px;
+  }
+  main .card .pos-rel .download-links .obb,
+main .card .pos-rel .download-links .apk-edit,
+main .card .pos-rel .download-links .data {
+    margin: 15px;
+  }
+  main .card .pos-rel .social-media {
+    display: flex;
+    margin: 10px;
+    font-size: 3rem;
+  }
+  main .card .pos-rel .social-media a {
+    margin: 30px;
+  }
+  main .card .pos-rel .social-media .facebook {
+    color: blue;
+  }
+  main .card .pos-rel .social-media .youtube {
+    color: red;
+  }
+  main .card .pos-rel .social-media .youtube,
+main .card .pos-rel .social-media .facebook {
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  main .install .card {
+    height: auto;
+  }
+  main .install .card .tutorial-section h1 {
+    text-transform: capitalize;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  main .install .card .tutorial-section .red {
+    color: red;
+  }
+  main .install .card .tutorial-section p {
+    margin: 30px 0;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+}
