@@ -42,7 +42,7 @@ closeBtn.addEventListener("click", () => newsletter.classList.remove("active"));
 
 submit.addEventListener("click", (e) => {
   if (textInfo.value) {
-    e.preventDefault();
+    // e.preventDefault();
     displayNews.classList.add("hide-news");
     req.classList.add("show-sent");
   } else {
