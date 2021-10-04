@@ -411,14 +411,14 @@ section .sci li a {
 .newsletter .display-news .inputBox {
   margin-top: 20px;
 }
-.newsletter .display-news .inputBox input {
+.newsletter .display-news .inputBox input, .newsletter .display-news .inputBox button {
   padding: 10px;
   outline: none;
   width: 300px;
   font-size: 18px;
   border: 1px solid #999;
 }
-.newsletter .display-news .inputBox input[type=submit] {
+.newsletter .display-news .inputBox button {
   padding: 10px;
   outline: none;
   width: 140px;
@@ -430,7 +430,7 @@ section .sci li a {
   cursor: pointer;
   transition: all 0.4s linear;
 }
-.newsletter .display-news .inputBox input[type=submit]:hover {
+.newsletter .display-news .inputBox button:hover {
   background: black;
   border-color: black;
 }

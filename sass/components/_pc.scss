@@ -183,14 +183,14 @@ section {
         .inputBox{
             margin-top: 20px;
 
-            input{
+            input,button{
                 padding: 10px;
                 outline: none;
                 width: 300px;
                 font-size: 18px;
                 border: 1px solid #999;
             }
-            input[type = "submit"]{
+            button{
                 padding: 10px;
                 outline: none;
                 width: 140px;
@@ -203,7 +203,7 @@ section {
                 transition: all .4s linear;
             }
 
-            input[type = "submit"]:hover{
+            button:hover{
                 background: black;
                 border-color: black;
             }
