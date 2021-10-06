@@ -131,6 +131,12 @@ main .heading .heading-card .inNavTrans h4 {
   width: 30vh;
   border-radius: 50px;
 }
+main .heading .heading-card .inNavTrans h4:hover {
+  background: black;
+  border: 1px solid black;
+  color: white;
+  transition: all 0.5s linear;
+}
 main .card {
   background: #fff;
   height: 100vh;
@@ -187,14 +193,22 @@ main .card .pos-rel .download-links .apk-edit {
   padding: 10px;
   width: 50vh;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(3, 14, 0, 0.9);
+  transition: all 0.5s linear;
 }
 main .card .pos-rel .download-links .apk-edit p {
   margin: 5px;
+}
+main .card .pos-rel .download-links .apk-edit:hover {
+  transition: all 0.5s linear;
+  background: #1414dd;
 }
 main .card .pos-rel .download-links .obb,
 main .card .pos-rel .download-links .apk-edit,
 main .card .pos-rel .download-links .data {
   margin: 15px;
+}
+main .card .pos-rel .download-links .apk-edit.patch {
+  background: #d40000;
 }
 main .card .pos-rel .social-media {
   display: flex;

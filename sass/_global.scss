@@ -148,6 +148,12 @@ main {
                     width: 30vh;
                     border-radius: 50px;
                 }
+                h4:hover {
+                    background: black;
+                    border: 1px solid black;
+                    color: white;
+                    transition: all .5s linear;
+                }
             }
         }
     }
@@ -207,14 +213,22 @@ main {
                     padding: 10px;
                     width: 50vh;
                     box-shadow: $card-shadow;
+                    transition: all .5s linear;
                     p {
                         margin: 5px;
                     }
+                }
+                .apk-edit:hover {
+                    transition: all .5s linear;
+                    background: #1414dd;
                 }
                 .obb,
                 .apk-edit,
                 .data {
                     margin: 15px;
+                }
+                .apk-edit.patch {
+                    background: #d40000;
                 }
             }
             .social-media {
