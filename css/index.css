@@ -164,6 +164,7 @@ main .card .pos-rel .card-img img {
 }
 main .card .pos-rel .title {
   margin: 10px;
+  text-align: center;
 }
 main .card .pos-rel .title h2 {
   font-weight: 600;
