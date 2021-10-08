@@ -130,6 +130,7 @@ main .heading .heading-card .inNavTrans h4 {
   text-align: center;
   width: 30vh;
   border-radius: 50px;
+  margin-bottom: 10px;
 }
 main .heading .heading-card .inNavTrans h4:hover {
   background: black;
@@ -246,6 +247,21 @@ main .install .card .tutorial-section .red {
 main .install .card .tutorial-section p {
   margin: 30px 0;
   font-size: 20px;
+  color: #333;
+}
+main .install .card .tutorial-section ul {
+  padding-top: 15px;
+}
+main .install .card .tutorial-section li.topic {
+  list-style-type: none;
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+main .install .card .tutorial-section li {
+  list-style-type: disc;
+  margin: 5px 0 5px 30px;
   color: #333;
 }
 

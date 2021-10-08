@@ -147,6 +147,7 @@ main {
                     text-align: center;
                     width: 30vh;
                     border-radius: 50px;
+                    margin-bottom: 10px;
                 }
                 h4:hover {
                     background: black;
@@ -272,6 +273,21 @@ main {
                 p {
                     margin: 30px 0;
                     font-size: 20px;
+                    color: #333;
+                }
+                ul {
+                    padding-top: 15px;
+                }
+                li.topic {
+                    list-style-type: none;
+                    margin: 15px 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: black;
+                }
+                li {
+                    list-style-type: disc;
+                    margin: 5px 0 5px 30px;
                     color: #333;
                 }
             }
